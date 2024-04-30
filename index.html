@@ -1,40 +1,144 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<img src="./assets/image/typescript-logo.png" alt="TypeScript-logo" />
+					<p style="text-align: right;">Abdugafurova Umida</p>
+				</section>
+				<section>
+					<h2>Structure:</h2>
+					<ol>
+						<li>What is it?</li>
+						<li>Opportunities</li>
+						<li>Problems</li>
+						<li>Statistics</li>
+						<li>Alternatives</li>
+					</ol>
+				</section>
+				<section>
+					<h2>What TypeScript actually is?</h2>
+					<ul>
+						<li>An open-source programming language</li>
+						<li>Created by Microsoft in October 2012 (at version 0.8)</li>
+						<li>A superset of JavaScript</li>
+						<li>Allows static typing</li>
+						<li>Interfaces, enums, ...</li>
+						<li>Based on the .NET harmony specification</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Advantages of TypeScript:</h2>
+						<h3>1. Type-checking</h3>
+						<img src="./assets/image/type-update.png" alt="type update" />
+						<p>Compile-time errors</p>
+					</section>
+					<section>
+						<h2>Advantages of TypeScript:</h2>
+						<h3>2. Time-saving</h3>
+						<ul>
+							<li>Mistakes searching</li>
+							<li>
+								Editors code suggestions
+								<img src="./assets/image/code-suggestion.png" alt="code-suggestion example" />
+							</li>
+							<li>Less tests</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Advantages of TypeScript:</h2>
+						<h3>3. Increased team performance</h3>
+						<ul>
+							<li>Easier to understand</li>
+							<li>“Self-documenting code”</li>
+							<li>Easier to refactor</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Advantages of TypeScript:</h2>
+						<h3>4. New Features + Browser Compatibility</h3>
+						<p>ES6, ES7,... => ES5</p>
+					</section>
+				</section>
+				<section>
+					<h2>Disadvantages of TypeScript</h2>
+					<ul>
+						<li>A compilation step</li>
+						<li>A bit difficult to set up</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Some Statistics...</h2>
+						<img src="./assets/image/github.png" alt="Statistics from GitHub" />
+					</section>
+					<section>
+						<h2>Some Statistics...</h2>
+						<img src="./assets/image/stackoverflow.png" alt="Most popular technologies" width="560"
+							height="554" />
+					</section>
+					<section>
+						<h2>Some Statistics...</h2>
+						<img src="./assets/image/stackoverflow2.png" alt="Most loved technologies" width="560"
+							height="554" />
+					</section>
+				</section>
+				<section>
+					<h2>Alternatives of TypeScript</h2>
+					<ul>
+						<li><b>Flow</b> — the type-checking system from Facebook</li>
+						<li><b>JSDoc</b> — the type-supporting documentation standard</li>
+						<li>Other strictly typed languages that compile to JavaScript
+							<ul>
+								<li><b>Kotlin</b></li>
+								<li><b>Rust</b></li>
+								<li><b>Go</b></li>
+								<li><b>Elm</b> and <b>Reason</b></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Thank you</h2>
+				</section>
 			</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: "plugin/markdown/marked.js" },
+					{ src: "plugin/markdown/markdown.js" },
+					{ src: "plugin/notes/notes.js", async: true },
+					{ src: "plugin/highlight/highlight.js", async: true }
+				]
 			});
 		</script>
 	</body>
+</body>
+
 </html>
